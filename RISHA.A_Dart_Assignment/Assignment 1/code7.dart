@@ -1,0 +1,17 @@
+// 7. Find quotient and remainder
+
+import 'dart:io';
+
+void main() {
+  print('Enter the first integer:');
+  int firstNumber = int.parse(stdin.readLineSync()!);
+
+  print('Enter the second integer:');
+  int secondNumber = int.parse(stdin.readLineSync()!);
+
+  int quotient = firstNumber ~/ secondNumber;
+  int remainder = firstNumber % secondNumber;
+
+  print('Quotient is $quotient');
+  print('Remainder is $remainder');
+}
